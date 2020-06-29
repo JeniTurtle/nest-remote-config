@@ -1,6 +1,6 @@
 {
   "name": "@jiaxinjiang/nest-remote-config",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Nacos config component for NestJs.",
   "keywords": [
     "nest",
@@ -12,8 +12,8 @@
     "build": "tsc -d"
   },
   "dependencies": {
-    "@jiaxinjiang/nest-config": "^1.0.2",
-    "@jiaxinjiang/nest-nacos": "1.0.4",
+    "@jiaxinjiang/nest-config": "^1.0.4",
+    "@jiaxinjiang/nest-nacos": "^1.0.6",
     "lodash": "^4.17.15",
     "reflect-metadata": "^0.1.12",
     "yamljs": "^0.3.0"
