@@ -1,6 +1,5 @@
 import { Module, DynamicModule, Global } from '@nestjs/common';
 import { ConfigModule } from '@jiaxinjiang/nest-config';
-import { NacosModule } from '@jiaxinjiang/nest-nacos';
 import { createNacosConfigProvider } from './remote.config.provider';
 import { RemoteConfigHelper } from './remote.config.helper';
 
@@ -11,7 +10,7 @@ export class RemoteConfigModule {
     const remoteConfigProvider = createNacosConfigProvider();
     return {
       module: RemoteConfigModule,
-      imports: [ConfigModule, NacosModule],
+      imports: [ConfigModule],
       providers: [RemoteConfigHelper, remoteConfigProvider],
       exports: [remoteConfigProvider],
     };
